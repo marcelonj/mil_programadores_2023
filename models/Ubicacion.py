@@ -14,6 +14,12 @@ class Ubicacion:
             "destinos" : self.direccion,
             "coordenadas" : self.coordenadas 
         }
+    
+    def devolverDireccion(self):
+        return self.direccion
+    
+    def devolverCoordenadas(self):
+        return self.coordenadas
 
     @classmethod
     def from_json(cls, json_str):
