@@ -13,9 +13,18 @@ class RutaVisita:
             "destinos" : self.destinos 
         }
 
-    def agregarEvento(self, evento):
+    def agregarDestino(self, evento):
         self.destinos.append(evento)
 
+    def eliminarDestino(self, destino):
+        if destino in self.destinos:
+            self.destinos.remove(destino)
+        else:
+            raise IndexError("El destino no se encuentra en la lista")
+
+    def vaciarDestinos(self):
+        self.destinos.clear()
+        
     def retornarEventos(self):
         if len(self.destinos) > 0:
             return self.destinos
