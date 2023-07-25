@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "casa",
+        "direccion": "B Sta Ana I",
+        "coordenadas": [
+            -65.12345,
+            45.12345
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "casa",
+        "direccion": "B Tres Cerritos",
+        "coordenadas": [
+            -65.54321,
+            45.54321
+        ]
+    }
+]

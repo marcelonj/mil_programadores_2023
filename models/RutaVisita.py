@@ -32,6 +32,12 @@ class RutaVisita:
             raise ValueError("La ruta no contiene detinos")
     
     @classmethod
-    def from_json(cls, json_str):
-        data = json.load(json_str)
-        return cls(data["id"], data["nombre"], data["destinos"])
+    def de_json(cls, datos_json):
+        datos = json.loads(datos_json)
+        return cls(**datos)
+
+    @staticmethod
+    def cargar_ubicaciones(archivo_json):
+        with open(archivo_json, "r") as archivo:
+            datos = json.load(archivo)
+        return [Ubicacion.de_json(json.dumps(dato)) for dato in datos]
