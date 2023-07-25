@@ -26,10 +26,12 @@ class Evento:
             }
 
     @classmethod
-    def from_json(cls, json_str):
-        data = json.loads(json_str)
-        return cls(data['id'], data['nombre'], data['artista'], data['genero'], data['id_ubicacion'], data['hora_inicio'], data['hora_fin'], data['descripcion'], data['imagen'])
+    def de_json(cls, datos_json):
+        datos = json.loads(datos_json)
+        return cls(**datos)
 
-
-
-    
+    @staticmethod
+    def cargar_eventos(archivo_json):
+        with open(archivo_json, "r") as archivo:
+            datos = json.load(archivo)
+        return [Evento.de_json(json.dumps(dato)) for dato in datos]
