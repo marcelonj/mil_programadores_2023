@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mil noches",
+        "artista": "Airbag",
+        "genero": "Rock nacional",
+        "id_ubicacion": 1,
+        "hora_inicio": "23:00",
+        "hora_fin": "02:00",
+        "descripcion": "Acompaña a esta conocida banda en su gira 'Mil noches'",
+        "imagen": "airbag.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Serenata salteña",
+        "artista": "Los nocheros",
+        "genero": "Folklore",
+        "id_ubicacion": 2,
+        "hora_inicio": "18:00",
+        "hora_fin": "23:00",
+        "descripcion": "Ven a disfrutar de una bella tarde salteña junto a Los Nocheros",
+        "imagen": "nocheros.jpg"
+    }
+]
