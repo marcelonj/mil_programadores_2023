@@ -2,93 +2,91 @@
 
 ## 🚀 DescripcióndelProblema
 
-Losamantesdelamúsicaamenudoseenfrentanadesafíosaltratardedescubriry
-asistiraeventosyconciertosmusicales.Lainformaciónsobreestoseventospuede
-estar dispersa yser difícil de encontrar. Además,la planificacióndela rutayel
-horarioparaasistiravarioseventospuedesercomplejayconsumirmuchotiempo.
+Los amantes de la música a menudo se enfrentan a desafíos al tratar de descubrir y
+asistir a eventos y conciertos musicales.
+La información sobre estos eventos puede estar dispersa yser difícil de encontrar.
+Además,la planificación de la ruta y el horario para asistir a varios eventos puede 
+ser compleja y consumir mucho tiempo.
 
 ## 🎯 ObjetivodelProyecto
 
-Desarrollarunaaplicacióndeescritorioquepermitaalosusuariosdescubrireventos
-musicales, planificar rutas y compartir su experiencia de manera eficiente y
-agradable.
+Desarrollar una aplicación de escritorio que permita a los usuarios descubrir eventos 
+musicales, planificar rutas y compartir su experiencia de manera eficiente y agradable.
 
 ## 💼 EstudiodelNegocio
 
 Basándonos en nuestra comprensión de las necesidades del cliente, hemos
-identificadolassiguientescaracterísticasclaveparalaaplicación:
+Identificado las siguientes características clave para la aplicación
 
 ## CaracterísticasPrincipales
 
-**1. Índice de Eventos** 📑:Listadeeventosmusicales condetallesesenciales
-    comoelnombredelevento,elartista,elgéneromusicalylaubicación.
-**2. BúsquedayFiltrado deEventos** 🔍:Permitealosusuariosbuscareventos
-    pornombre,géneroyartista,yfiltr areventosporubicaciónyhorario.
-**3. MapayPlanificadodeRutas** 🗺:Visualizacióndelaubicacióndeloseventos
+**1. Índice de Eventos** 📑:Lista de eventos musicales con detalles esenciales
+como el nombre del evento, el artista, el género musical y la ubicación.
+**2. BúsquedayFiltrado deEventos** 🔍:Permite a los usuarios buscar eventos.
+   Por nombre, género y artista, y filtrar eventos por ubicación y horario.
+**3. MapayPlanificadodeRutas** 🗺:Visualización de la ubicación de los eventos.
     en un mapa y unaherramienta paraplanificar rutas paraasistir avarios
     eventos.
-**4. ReseñasyCalificaciones** ⭐:Losusuariospuedenescribirreseñasycalificar
-    loseventosalosquehanasistido,proporcionandovaliososcomentariosa
+**4. ReseñasyCalificaciones** ⭐:Los usuarios pueden escribir reseñas y calificar
+los eventos a los que han asistido, proporcionando valiosos comentarios
     otrosusuarios.
-**5. HistorialdeEventosAsistidos** 📖:Losusuariospuedenverunregistrodelos
-    eventosalosquehanasistidoenelpasado.
-**6. SeñaladordeÁnimodelComentario** 😃 **/** 😔:Losusuariospuedenindicarsisu
-    comentariosobrelaexperienciaespositivoonegativo.
+**5. HistorialdeEventosAsistidos** 📖:Los usuarios pueden ver un registro de los
+ eventos a los que han asistido en el pasado.
+**6. SeñaladordeÁnimodelComentario** 😃 **/** 😔:Los usuarios pueden indicar si su 
+comentario sobre la experiencia es positivo o negativo.
 **7. Experiencia, Información que Puede Contener Spoilers** 󰡷: Los usuarios
-    puedencompartirdetallessobresuexperienciaenelevento.
+    pueden compartir detalles sobre su experiencia en el evento.
 
 
 ## CaracterísticasOpcionales
 
-1. **CompartirenRedesSociales** 🚀:Permitealosusuarioscompartireventosy
-    ubicacionesensusredessociales.
-2. **DestacadodeEventosPróximos** 🕒:Resaltaloseventosqueestánapuntode
-    comenzar.
+1. **CompartirenRedesSociales** 🚀:Permite a los usuarios compartir eventos y
+ ubicaciones en sus redes sociales.
+2. **DestacadodeEventosPróximos** 🕒:Resalta los eventos que están a punto de 
+comenzar.
 
 ## DiseñoUI
 
-Paralainterfazdeusuario,buscamosundiseñolimpioymodernoquesealineecon
-laestéticadeloseventosmusicales.
+Para la interfaz de usuario, buscamos un diseño limpio y moderno que se alinee con
+la estética de los eventos musicales.
 
 ## Tipografía
 
-Paralatipografía,proponemosusarunacombinacióndefuentesSansSerifparaun
-aspectomodernoylimpio.Podemosusar **‘Roboto’** paralostítulosy **‘OpenSans’**
-para el texto del cuerpo. Estas son legibles yse ven bienen una variedadde
-tamañosdepantalla.
+Para la tipografía, proponemos usar una combinación de fuentes Sans Serif para un aspecto
+moderno y limpio. Podemos usar 'Roboto' para los títulos y 'OpenSans' para el texto 
+del cuerpo. Estas son legibles y se ven bien en una variedad de tamaños de pantalla.
 
 ## PaletadeColores
 
-Nuestrapaletadecoloresseinspiraenelmundodelamúsicaybuscaequilibrarla
-energíaylacalma.Proponemoslossiguientescolores:
+Nuestra paleta de colores se inspira en el mundo de la música y busca equilibrar la energía y
+la calma. Proponemos los siguientes colores:
 
-## PúrpuraOscuro ( #2F242C ) ♫ :Estecolorseutilizaráparalostítulosyeltexto
-
-```
-importante.Elpúrpuraoscuroesuncolorrelajantequetambiénproporciona
-unbuencontrasteconelfondo.
-```
-## GrisClaro ( #E5E5E5 ) ♫ :Estecolorseutilizaráparaeltextodelcuerpoylos
+## PúrpuraOscuro ( #2F242C ) ♫ Este color se utilizará para los títulos y el texto.
 
 ```
-fondosdelastarjetasdeeventos(siseutilizan).Elgrisclaroproporcionaalto
-contrasteconelpúrpuraoscuro,loquefacilitalalectura.
+Importante. El púrpura oscuro es un color relajante que también proporciona un buen contraste
+con el fondo.
+```
+## GrisClaro ( #E5E5E5 ) ♫ Este color se utilizará para el texto del cuerpo
+
+```
+Fondos de las tarjetas de eventos (si se utilizan). El gris claro proporciona alto contraste con
+el púrpura oscuro, lo que facilita la lectura
 ```
 ## Amarillo (#E6D884 ) ♫ : Este color se utilizará para resaltar información
 
 ```
-importanteybotonesinteractivos.Elamarilloesuncolorenérgicoqueatrae
-laatencióndelusuario.
+Importante y botones interactivos. El amarillo es un color energético que atrae la atención del usuario.
 ```
 ## Verde Claro ( #A1A892 ) ♫ : Este color se utilizará paralos bordes y los
 
 ```
-elementosdelainterfazdeusuariosecundarios.Elverdeclaroproporciona
-uncontrastesuaveconelblancoyelazuloscuro.
+Elementos de la interfaz de usuario secundarios. El verde claro proporciona un contraste suave con el
+blanco y el azul oscuro
 ```
 
-Seofrecelaposibilidaddeelegirunapaletaalternativaparatenerunaimagenmás
-diferenciadautilizandositioscomo:
+Se ofrece la posibilidad de elegir una paleta alternativa para tener una imagen más diferenciada
+utilizando sitios como
 
 ```
 ● http://colormind.io/
@@ -98,31 +96,30 @@ diferenciadautilizandositioscomo:
 ```
 ## FlujodeUsuario
 
-La pantalla principal contará con tres botones que separanlas secciones más
-importantes de la aplicación. Estos son, el índice deeventos, laherramienta de
-búsquedayfiltr adodeeventos,yelhistorialdeeventos.
+La pantalla principal contará con tres botones que separan las secciones más importantes de la aplicación.
+Estos son, el índice de eventos, la herramienta de búsqueda y filtrado de eventos, y el historial de eventos.
 
 
-Lasegundapantallaconopcionesesladelosdetallesdelevento.Aquíelusuario
-tienelaposibilidaddeutilizarmapasparaubicarvisualmenteloseventos,yporotro
-ladolasreviewsendondesepuedecalificaruneventodejandouncomentarioyel
-estadodeánimorespectoaleventoasistido.
+La segunda pantalla con opciones es la de los detalles del evento. Aquí, el usuario tiene la posibilidad de 
+utilizar mapas para ubicar visualmente los eventos, y por otro lado, las reviews donde se puede calificar 
+un evento dejando un comentario y el estado de ánimo respecto al evento asistido.
 
-Elclientepropondráaplicacionesdefuncionamientosimilarparautilizarcomoguía
-paraeldiseñodelainterfazgráficadelaaplicación.
+El cliente propondrá aplicaciones de funcionamiento similar para utilizar como guía para el diseño de la
+interfaz gráfica de la aplicación
 
-Seproponelasiguienteestructuradeproyecto:
+Se propone la siguiente estructura de proyecto:
 
 /raíz del proyecto
 /views
-archivos.pyquedefinenlainterfazconTkinter
+archivos.py que definen la interfaz con Tkinter
 /models
-archivos.pyquedefinencadaunodelosmodelos
+archivos.py que definen cada uno de los modelos
 /data
-archivos.jsonconlainformaciónalmacenada
+archivos.json con la información almacenada
 /assets
-recursosgráficoscomoimágenes,fuentes,íconos,etc.
-main.py(Archivoprincipalqueiniciarálaaplicación)
+recursos gráficos como imágenes, fuentes, íconos, etc.
+main.py (Archivo principal que iniciará la aplicación)
+
 
 
 ## RequerimientosdeModelo
