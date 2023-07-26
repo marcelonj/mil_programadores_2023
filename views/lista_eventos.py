@@ -27,7 +27,8 @@ class ListaEventos(tk.Frame):
         eventos = self.control.obtener_eventos()
         self.listbox.delete(0, tk.END)
         for evento in eventos:
-            self.listbox.insert(tk.END, evento.nombre)
+            detalles = f"{evento.nombre} | {evento.artista} | {evento.genero}"
+            self.listbox.insert(tk.END, detalles)
 
     def obtener_evento_seleccionado(self):
         indice = self.listbox.curselection()
