@@ -1,8 +1,10 @@
 import tkinter as tk
 from views.ventana_principal import VentanaPrincipal
 from views.lista_eventos import ListaEventos
+from views.detalle_evento import DetalleEvento
 from assets.controlador_vista_principal import ControladorVistaPrincipal
 from assets.controlador_lista_eventos import ControladorListaEventos
+from assets.controlador_detalle_evento import ControladorDetalleEvento
 from models.Evento import Evento
 
 class Aplicacion(tk.Tk):
@@ -18,12 +20,15 @@ class Aplicacion(tk.Tk):
 
         controlador_inicio = ControladorVistaPrincipal(self)
         controlador_lista_eventos = ControladorListaEventos(self, array_eventos)
+        controlador_detalle_evento = ControladorDetalleEvento(self)
 
         self.vista_inicio = VentanaPrincipal(self, controlador_inicio)
         self.vista_eventos = ListaEventos(self, controlador_lista_eventos)
+        self.vista_detalle = DetalleEvento(self, controlador_detalle_evento)
 
         self.ajustar_frame(self.vista_inicio)
         self.ajustar_frame(self.vista_eventos)
+        self.ajustar_frame(self.vista_detalle)
 
     def ajustar_frame(self, frame):
         frame.grid(row=0, column=0, sticky="nsew")

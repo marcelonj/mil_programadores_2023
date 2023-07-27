@@ -1,3 +1,5 @@
+from views.detalle_evento import FrameDetalle
+
 class ControladorListaEventos:
     def __init__(self, app, array_eventos):
         self.app = app
@@ -12,4 +14,6 @@ class ControladorListaEventos:
     def seleccionar_evento(self):
         indice = self.app.vista_eventos.obtener_evento_seleccionado()
         if indice is not None:
-            print(indice)
+            evento = self.array_eventos[indice]
+            self.app.vista_detalle.detalles.mostrar_evento(evento)
+            self.app.cambiar_frame(self.app.vista_detalle)
