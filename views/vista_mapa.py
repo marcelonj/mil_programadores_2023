@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 from tkintermapview import TkinterMapView
-from PIL import Image, ImageTk
 
 class VistaMapa(tk.Frame):
     def __init__(self, master = None, control = None):
