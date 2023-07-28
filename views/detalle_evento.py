@@ -1,4 +1,5 @@
 import tkinter as tk
+from views.vista_mapa import VistaMapa
 
 class DetalleEvento(tk.Frame):
     def __init__(self, master = None, control = None):
@@ -7,9 +8,15 @@ class DetalleEvento(tk.Frame):
         self.detalles = FrameDetalle(self, control=self.control)
         self.detalles.config(width=400, height=600, bg="blue")
         self.detalles.pack(side="left", fill="both")
+        self.mapa = VistaMapa(self)
+        self.mapa.pack(side="right")
+
+    def colocar_marcador(self, latitud, longitud, texto):
+         self.mapa.mapa.set_position(latitud, longitud)
+         self.mapa.agregar_marcador_mapa(latitud, longitud, texto)
 
 class FrameDetalle(tk.Frame):
-    def __init__(self, master = None, control = None):
+    def __init__(self, master = None, control = None, height=600, width=200):
         super().__init__(master)
         self.master = master
         self.control = control        

@@ -2,9 +2,11 @@ import tkinter as tk
 from views.ventana_principal import VentanaPrincipal
 from views.lista_eventos import ListaEventos
 from views.detalle_evento import DetalleEvento
+from views.vista_mapa import VistaMapa
 from assets.controlador_vista_principal import ControladorVistaPrincipal
 from assets.controlador_lista_eventos import ControladorListaEventos
 from assets.controlador_detalle_evento import ControladorDetalleEvento
+from assets.controlador_mapa import ControladorPrincipal
 from models.Evento import Evento
 
 class Aplicacion(tk.Tk):
