@@ -1,7 +1,8 @@
 import tkinter as tk
 from views.vista_mapa import VistaMapa
 
-class DetalleEvento(tk.Frame):
+
+class DetalleEvento(tk.Frame): 
     def __init__(self, master = None, control = None):
         super().__init__(master)
         self.control = control
@@ -10,9 +11,11 @@ class DetalleEvento(tk.Frame):
         self.mapa = VistaMapa(self)
         self.mapa.pack(side="right")
 
+      
+
     def colocar_marcador(self, latitud, longitud, texto):
-         self.mapa.mapa.set_position(latitud, longitud)
-         self.mapa.agregar_marcador_mapa(latitud, longitud, texto)
+        self.mapa.mapa.set_position(latitud, longitud)
+        self.mapa.agregar_marcador_mapa(latitud, longitud, texto)
 
 class FrameDetalle(tk.Frame):
     def __init__(self, master = None, control = None):
@@ -32,6 +35,8 @@ class FrameDetalle(tk.Frame):
         self.hora_fin.pack(pady=20, padx=1)
         self.descripcion = tk.Label(self, text="")
         self.descripcion.pack(pady=20, padx=1)
+        
+    
 
         self.boton_volver()        
 
@@ -48,7 +53,7 @@ class FrameDetalle(tk.Frame):
             self.hora_fin["text"] = hora_fin_evento
             #descripcion_evento = f"Descripcion: {evento.descripcion}"
             #self.descripcion["text"] = descripcion_evento
-
+         
     def boton_volver(self):
         self.boton_volver = tk.Button(self, text= 'volver', command=self.control.volver)
         self.boton_volver.pack(padx=10, pady=10)

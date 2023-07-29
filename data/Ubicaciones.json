@@ -16,5 +16,32 @@
             -24.8288612,
             -65.4340459
         ]
+    },
+    {
+        "id": 3,
+        "nombre": "ONE Food Y Sound",
+        "direccion": "Balcarce 931",
+        "coordenadas": [
+            -24.7772542,
+            -65.4114206
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Rith Themed Restobar",
+        "direccion": "Av. del Bicentenario de la Batalla de Salta 1330",
+        "coordenadas": [
+            -24.7743121,
+            -65.3994877
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Estadio Padre Ernesto Martearena",
+        "direccion": "C. Fernandes Molinas",
+        "coordenadas": [
+            -24.8205615,
+            -65.4197246
+        ]
     }
 ]
