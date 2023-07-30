@@ -38,7 +38,8 @@ class FrameDetalle(tk.Frame):
         
     
 
-        self.boton_volver()        
+        self.boton_volver()
+        self.boton_dejar_review()        
 
     def mostrar_evento(self, evento):
             nombre_evento = f"{evento.nombre}"
@@ -53,7 +54,12 @@ class FrameDetalle(tk.Frame):
             self.hora_fin["text"] = hora_fin_evento
             #descripcion_evento = f"Descripcion: {evento.descripcion}"
             #self.descripcion["text"] = descripcion_evento
+            self.control.evento = evento
          
     def boton_volver(self):
         self.boton_volver = tk.Button(self, text= 'volver', command=self.control.volver)
         self.boton_volver.pack(padx=10, pady=10)
+
+    def boton_dejar_review(self):
+         self.boton_dejar_review = tk.Button(self, text= 'dejar review', command=self.control.review)
+         self.boton_dejar_review.pack(padx=10, pady=10)

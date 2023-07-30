@@ -5,3 +5,7 @@ class ControladorDetalleEvento:
         
     def volver(self):
         self.app.cambiar_frame(self.app.vista_eventos)
+
+    def review(self):
+        self.app.vista_review.control.set_id(self.evento.id)
+        self.app.cambiar_frame(self.app.vista_review)
