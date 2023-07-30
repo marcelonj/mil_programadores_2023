@@ -8,7 +8,7 @@
         "hora_inicio": "23:00",
         "hora_fin": "02:00",
         "descripcion": "Acompaña a esta conocida banda en su gira 'Mil noches'",
-        "imagen": "airbag.jpg"
+        "imagen": "airbag.png"
     },
     {
         "id": 2,
@@ -19,6 +19,50 @@
         "hora_inicio": "18:00",
         "hora_fin": "23:00",
         "descripcion": "Ven a disfrutar de una bella tarde salteña junto a Los Nocheros",
-        "imagen": "nocheros.jpg"
+        "imagen": "nocheros.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Messi 10",
+        "artista": "Circo du Solei",
+        "genero": "Musical",
+        "id_ubicacion": 1,
+        "hora_inicio": "20:00",
+        "hora_fin": "23:00",
+        "descripcion": "Espectaculo musical y cirquense en homenaje a Messi",
+        "imagen": "messi10.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Salta Jazz",
+        "artista": "artistas locales",
+        "genero": "Jazz",
+        "id_ubicacion": 5,
+        "hora_inicio": "21:00",
+        "hora_fin": "24:00",
+        "descripcion": "Ven a disfrutar de una noche con todo el jazz salteño",
+        "imagen": "saltajazz.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Salta rock",
+        "artista": "Gauchos de acero",
+        "genero": "Rock nacional",
+        "id_ubicacion": 3,
+        "hora_inicio": "20:30",
+        "hora_fin": "00:00",
+        "descripcion": "La banda de rock metalico salteño te espera",
+        "imagen": "gauchos.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Perro Ciego 33 aniversario",
+        "artista": "Perro ciego",
+        "genero": "Rock",
+        "id_ubicacion": 4,
+        "hora_inicio": "21:00",
+        "hora_fin": "24:00",
+        "descripcion": "Festeja los 33 años de rock salteño",
+        "imagen": "perro.jpg"
     }
 ]

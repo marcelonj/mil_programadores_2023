@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "id_evento": 2,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Estuvo bueno el evento, pero la organizacion es mejorable",
+        "animo": "Like"
+    },
+    {
+        "id": 2,
+        "id_evento": 2,
+        "id_usuario": 2,
+        "calificacion": "Malo",
+        "comentario": "No me gusto la organizacion, empezo tarde",
+        "animo": "Unlike"
+    }
+]
