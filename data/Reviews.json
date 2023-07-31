@@ -14,5 +14,21 @@
         "calificacion": "Malo",
         "comentario": "No me gusto la organizacion, empezo tarde",
         "animo": "Unlike"
+    },
+    {
+        "id": 3,
+        "id_evento": 3,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Me gust\u00f3 mucho\n",
+        "animo": "Like"
+    },
+    {
+        "id": 4,
+        "id_evento": 3,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "me gusto mucho\n",
+        "animo": "Like"
     }
 ]

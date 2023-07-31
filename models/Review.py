@@ -22,7 +22,7 @@ class Review:
     @classmethod
     def from_json(cls, json_str):
         data = json.loads(json_str)
-        return cls(data['id'], data['id_evento'], data['id_usuario'], data['calificacion'], data['comentario'], data['animo'])
+        return cls(**data)
 
     @classmethod
     def load_reviews(cls, file_path):
