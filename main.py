@@ -3,12 +3,12 @@ from views.lista_reviews import ListaReviews
 from views.ventana_principal import VentanaPrincipal
 from views.lista_eventos import ListaEventos
 from views.detalle_evento import DetalleEvento
-from views.ventana_review import DejarReview #
-from assets.controlador_vista_principal import ControladorVistaPrincipal
-from assets.controlador_lista_eventos import ControladorListaEventos
-from assets.controlador_detalle_evento import ControladorDetalleEvento
-from assets.controlador_lista_review import ControladorListaReviews
-from assets.controlador_review import ControladorReview #
+from views.ventana_review import DejarReview
+from controllers.controlador_vista_principal import ControladorVistaPrincipal
+from controllers.controlador_lista_eventos import ControladorListaEventos
+from controllers.controlador_detalle_evento import ControladorDetalleEvento
+from controllers.controlador_lista_review import ControladorListaReviews
+from controllers.controlador_review import ControladorReview
 from models.Evento import Evento
 from models.Review import Review 
 
@@ -28,19 +28,19 @@ class Aplicacion(tk.Tk):
         controlador_inicio = ControladorVistaPrincipal(self)
         controlador_lista_eventos = ControladorListaEventos(self, array_eventos)
         controlador_detalle_evento = ControladorDetalleEvento(self)
-        controlador_review = ControladorReview(self, array_reviews) #
+        controlador_review = ControladorReview(self, array_reviews)
         controlador_lista_reviews = ControladorListaReviews(self, array_reviews, array_eventos) 
 
         self.vista_inicio = VentanaPrincipal(self, controlador_inicio)
         self.vista_eventos = ListaEventos(self, controlador_lista_eventos)
         self.vista_detalle = DetalleEvento(self, controlador_detalle_evento)
-        self.vista_review = DejarReview(self, controlador_review) #
+        self.vista_review = DejarReview(self, controlador_review)
         self.vista_lista_reviews = ListaReviews(self, controlador_lista_reviews) 
 
         self.ajustar_frame(self.vista_inicio)
         self.ajustar_frame(self.vista_eventos)
         self.ajustar_frame(self.vista_detalle)
-        self.ajustar_frame(self.vista_review) #
+        self.ajustar_frame(self.vista_review)
         self.ajustar_frame(self.vista_lista_reviews)
 
     def ajustar_frame(self, frame):

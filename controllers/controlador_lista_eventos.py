@@ -8,16 +8,13 @@ class ControladorListaEventos:
         self.array_eventos = array_eventos
         self.ubicaciones = Ubicacion.cargar_ubicaciones("data/Ubicaciones.json")
         
-        self.imagenes = [] #
-        self.cargar_imagenes() #
+        self.imagenes = []
+        self.cargar_imagenes()
 
-    def cargar_imagenes(self): #
-        for evento in self.array_eventos: #
-            imagen = ImageTk.PhotoImage(Image.open(f"views/images/{evento.imagen}").resize((200, 200))) #
-            self.imagenes.append(imagen) #
-
-
-
+    def cargar_imagenes(self):
+        for evento in self.array_eventos:
+            imagen = ImageTk.PhotoImage(Image.open(f"assets/images/{evento.imagen}").resize((150, 150))) #
+            self.imagenes.append(imagen)
 
     def volver(self):
         self.app.cambiar_frame(self.app.vista_inicio)
