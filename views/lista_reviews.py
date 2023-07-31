@@ -25,7 +25,7 @@ class ListaReviews(tk.Frame):
     
     def comentarios(self):
         self.comentario = tk.Label(self, text="")
-        self.comentario.grid(row=1, column=0)
+        self.comentario.grid(row=1, column=0, columnspan=3)
 
     def nombre_eventos(self):
         array_nombre_eventos = []
@@ -41,5 +41,5 @@ class ListaReviews(tk.Frame):
                 id = evento.id
         for review in self.reviews:
             if review.id_evento == id:
-                mensaje = mensaje + review.comentario + "\n\n"
+                mensaje = mensaje + review.comentario + "\n-----------------------\n"
         self.comentario["text"] = mensaje
