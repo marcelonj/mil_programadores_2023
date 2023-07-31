@@ -1,7 +1,9 @@
+from models.Review import Review
+
 class ControladorReview:
-    def __init__(self, app, review=None):
+    def __init__(self, app):
         self.app = app
-        self.review = review
+        self.review = Review.load_reviews("data/Reviews.json")
         self.id = None
         
     def volver(self):
@@ -13,3 +15,12 @@ class ControladorReview:
 
     def retornar_id(self):
         return self.id
+    
+    def publicar_review(self, comentario, animo):
+        estado_animo = {
+            0: "Unlike",
+            1: "Like"
+        }
+        nueva_review = Review(len(self.review ) + 1, self.id, 1, "Bueno", comentario, estado_animo[animo])
+        self.review.append(nueva_review)
+        Review.save_reviews("data/Reviews.json", self.review)
