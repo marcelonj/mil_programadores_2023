@@ -4,3 +4,6 @@ class ControladorVistaPrincipal:
 
     def mostrar_eventos(self):
         self.app.cambiar_frame(self.app.vista_eventos)
+
+    def mostrar_reviews(self):
+        self.app.cambiar_frame(self.app.vista_lista_reviews)

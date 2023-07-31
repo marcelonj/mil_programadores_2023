@@ -1,9 +1,9 @@
 from models.Review import Review
 
 class ControladorReview:
-    def __init__(self, app):
+    def __init__(self, app, array_reviews):
         self.app = app
-        self.review = Review.load_reviews("data/Reviews.json")
+        self.review = array_reviews
         self.id = None
         
     def volver(self):

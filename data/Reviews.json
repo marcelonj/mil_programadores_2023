@@ -20,15 +20,15 @@
         "id_evento": 3,
         "id_usuario": 1,
         "calificacion": "Bueno",
-        "comentario": "Me gust\u00f3 mucho\n",
+        "comentario": "me gusto mucho\n",
         "animo": "Like"
     },
     {
         "id": 4,
-        "id_evento": 3,
+        "id_evento": 6,
         "id_usuario": 1,
         "calificacion": "Bueno",
-        "comentario": "me gusto mucho\n",
+        "comentario": "Un show magnifico!\n",
         "animo": "Like"
     }
 ]

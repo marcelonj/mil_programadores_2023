@@ -1,6 +1,5 @@
 import tkinter as tk
 
-
 class DejarReview(tk.Frame): 
     def __init__(self, master = None, control = None):
         super().__init__(master)
