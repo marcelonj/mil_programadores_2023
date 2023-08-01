@@ -21,23 +21,24 @@ class FrameDetalle(tk.Frame):
     def __init__(self, master = None, control = None):
         super().__init__(master)
         self.master = master
-        self.control = control        
+        self.control = control
+        self.img = None      
 
         self.nombre = tk.Label(self, text="")
-        self.nombre.pack(pady=20, padx=1)
+        self.nombre.pack(pady=10, padx=1)
         self.artista = tk.Label(self, text="")
-        self.artista.pack(pady=20, padx=1)
+        self.artista.pack(pady=10, padx=1)
         self.genero = tk.Label(self, text="")
-        self.genero.pack(pady=20, padx=1)
+        self.genero.pack(pady=10, padx=1)
         self.hora_inicio = tk.Label(self, text="")
-        self.hora_inicio.pack(pady=20, padx=1)
+        self.hora_inicio.pack(pady=10, padx=1)
         self.hora_fin = tk.Label(self, text="")
-        self.hora_fin.pack(pady=20, padx=1)
+        self.hora_fin.pack(pady=10, padx=1)
         self.descripcion = tk.Label(self, text="")
-        self.descripcion.pack(pady=20, padx=1)
+        self.descripcion.pack(pady=10, padx=1)
         
     
-
+        self.frame_imagen()
         self.boton_volver()
         self.boton_dejar_review()        
 
@@ -52,8 +53,6 @@ class FrameDetalle(tk.Frame):
             self.hora_inicio["text"] = hora_inicio_evento
             hora_fin_evento = f"Hora de finalizacion: {evento.hora_fin}"
             self.hora_fin["text"] = hora_fin_evento
-            #descripcion_evento = f"Descripcion: {evento.descripcion}"
-            #self.descripcion["text"] = descripcion_evento
             self.control.evento = evento
          
     def boton_volver(self):
@@ -63,3 +62,10 @@ class FrameDetalle(tk.Frame):
     def boton_dejar_review(self):
          self.boton_dejar_review = tk.Button(self, text= 'dejar review', command=self.control.review)
          self.boton_dejar_review.pack(padx=10, pady=10)
+
+    def frame_imagen(self):
+         self.imagen = tk.Label(self, image=self.img)
+         self.imagen.pack(padx=10, pady=1)
+    
+    def set_img(self, imagen):
+         self.imagen["image"] = imagen
