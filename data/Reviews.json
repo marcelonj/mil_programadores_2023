@@ -46,5 +46,21 @@
         "calificacion": "Bueno",
         "comentario": "Excelente evento!!!\n",
         "animo": "Like"
+    },
+    {
+        "id": 7,
+        "id_evento": 2,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Una magnifica presentacion de folklore salte\u00f1o\n",
+        "animo": "Like"
+    },
+    {
+        "id": 8,
+        "id_evento": 4,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Demasiado relajado\n",
+        "animo": "Unlike"
     }
 ]
