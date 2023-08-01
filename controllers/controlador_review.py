@@ -1,10 +1,12 @@
 from models.Review import Review
+from models.Asistidos import Asistido
 
 class ControladorReview:
-    def __init__(self, app, array_reviews):
+    def __init__(self, app, array_reviews, array_asistidos):
         self.app = app
         self.review = array_reviews
         self.id = None
+        self.asistidos = array_asistidos
         
     def volver(self):
         self.app.cambiar_frame(self.app.vista_detalle)
@@ -27,3 +29,6 @@ class ControladorReview:
         nueva_review = Review(len(self.review ) + 1, self.id, 1, "Bueno", comentario, estado_animo[animo])
         self.review.append(nueva_review)
         Review.save_reviews("data/Reviews.json", self.review)
+        nuevo_asistido = Asistido(len(self.asistido) + 1, self.id_evento, self.id_usuario) 
+
+
