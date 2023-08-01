@@ -13,6 +13,9 @@ from controllers.controlador_review import ControladorReview
 from models.Evento import Evento
 from models.Review import Review 
 
+""" Esta es una aplicacion que tiene un listado de eventos, y permite al usuario ver los detalles 
+de cada evento y realizar reseñas de los eventos """
+
 class Aplicacion(customtkinter.CTk):
     def __init__(self):
         super().__init__()
