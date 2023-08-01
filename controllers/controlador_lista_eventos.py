@@ -22,6 +22,7 @@ class ControladorListaEventos:
     def obtener_eventos(self):
         return self.array_eventos
     
+    """ Funcion para seleccion de los eventos """
     def seleccionar_evento(self):
         indice = self.app.vista_eventos.obtener_evento_seleccionado()
         if indice is not None:

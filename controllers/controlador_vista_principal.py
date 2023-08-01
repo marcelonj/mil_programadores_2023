@@ -7,3 +7,6 @@ class ControladorVistaPrincipal:
 
     def mostrar_reviews(self):
         self.app.cambiar_frame(self.app.vista_lista_reviews)
+
+    def mostrar_asistidos(self):
+        self.app.cambiar_frame(self.app.vista_lista_asistidos)

@@ -2,7 +2,7 @@ import tkinter as tk
 import customtkinter as ctk
 from views.vista_mapa import VistaMapa
 
-
+""" Vista de los detalles de un evento """
 class DetalleEvento(ctk.CTkFrame): 
     def __init__(self, master = None, control = None):
         super().__init__(master)

@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
+""" Vista que permite realizar la busqueda de reseñas de un evento"""
+
 class ListaReviews(tk.Frame):
     def __init__(self, master=None, control=None):
         super().__init__(master)

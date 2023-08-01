@@ -29,6 +29,10 @@ class ControladorReview:
         nueva_review = Review(len(self.review ) + 1, self.id, 1, "Bueno", comentario, estado_animo[animo])
         self.review.append(nueva_review)
         Review.save_reviews("data/Reviews.json", self.review)
+       
         nuevo_asistido = Asistido(len(self.asistido) + 1, self.id_evento, self.id_usuario) 
+        self.asistidos.append(nuevo_asistido)
+        Asistido.save_asistidos("data/Asistidos.json", self.asistidos)
+        
 
 

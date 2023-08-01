@@ -34,12 +34,12 @@ class ControladorPrincipal:
     def seleccionar_evento(self, event):
         # Obtiene el índice del elemento seleccionado
         indice_seleccionado = self.vista.array_eventos.curselection()
-        # Obtiene el local seleccionado
+        # Obtiene el evento seleccionado
         evento_seleccionado = self.Evento[indice_seleccionado[0]]
         
         ubicacion_seleccionada = Ubicacion(0, 0, 0, "")
         
-        # Busca la ubicación correspondiente al local seleccionado
+        # Busca la ubicación correspondiente al evento seleccionado
         for ubicacion in self.ubicaciones:
             if ubicacion.id == evento_seleccionado.id_ubicacion:
                 ubicacion_seleccionada = ubicacion

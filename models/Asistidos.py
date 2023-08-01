@@ -1,6 +1,6 @@
 import json
 
-class Asistidos:
+class Asistido:
     def __init__(self, id, id_evento, id_usuario):
         self.id = id
         self.id_evento = id_evento
