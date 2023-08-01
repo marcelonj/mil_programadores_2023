@@ -17,6 +17,9 @@ class ControladorReview:
         return self.id
     
     def publicar_review(self, comentario, animo):
+        """ 
+        Guarda el comentario y el animo en el fichero json correspondiente.
+        """
         estado_animo = {
             0: "Unlike",
             1: "Like"

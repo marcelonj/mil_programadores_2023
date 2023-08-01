@@ -38,5 +38,13 @@
         "calificacion": "Bueno",
         "comentario": "Hicieron acrobacias impresionantes!!!\n",
         "animo": "Like"
+    },
+    {
+        "id": 6,
+        "id_evento": 1,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Excelente evento!!!\n",
+        "animo": "Like"
     }
 ]
