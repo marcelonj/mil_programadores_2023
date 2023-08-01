@@ -1,18 +1,19 @@
 import tkinter as tk
+import customtkinter as ctk
 
-class ListaEventos(tk.Frame):
+class ListaEventos(ctk.CTkFrame):
     def __init__(self, master=None, control=None):
         super().__init__(master)
         self.control = control
-        self.volver = self.boton_volver()
         self.lista = self.mostrar_lista()
+        self.volver = self.boton_volver()
 
     def boton_volver(self):
-        self.boton_volver = tk.Button(self, text= 'volver', command=self.control.volver)
+        self.boton_volver = ctk.CTkButton(self, text= 'volver', command=self.control.volver)
         self.boton_volver.pack(padx=10, pady=10)
 
     def mostrar_lista(self):
-        self.titulo = tk.Label(self, text="Lista de Eventos")
+        self.titulo = ctk.CTkLabel(self, text="Lista de Eventos")
         self.titulo.pack(pady=20)
         self.listbox = tk.Listbox(self)
         self.listbox.config(width=50)

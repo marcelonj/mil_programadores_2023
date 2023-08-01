@@ -1,4 +1,5 @@
 import tkinter as tk
+import customtkinter
 from views.lista_reviews import ListaReviews
 from views.ventana_principal import VentanaPrincipal
 from views.lista_eventos import ListaEventos
@@ -12,7 +13,7 @@ from controllers.controlador_review import ControladorReview
 from models.Evento import Evento
 from models.Review import Review 
 
-class Aplicacion(tk.Tk):
+class Aplicacion(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         self.title('Tour Musical')

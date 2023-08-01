@@ -1,12 +1,14 @@
 import tkinter as tk
+import customtkinter as ctk
 from views.vista_mapa import VistaMapa
 
 
-class DetalleEvento(tk.Frame): 
+class DetalleEvento(ctk.CTkFrame): 
     def __init__(self, master = None, control = None):
         super().__init__(master)
         self.control = control
         self.detalles = FrameDetalle(self, control=self.control)
+        self.detalles["background"] = "#202124"
         self.detalles.place(x=0, y=0, width=250, height=600)
         self.mapa = VistaMapa(self)
         self.mapa.pack(side="right")
@@ -34,8 +36,6 @@ class FrameDetalle(tk.Frame):
         self.hora_inicio.pack(pady=10, padx=1)
         self.hora_fin = tk.Label(self, text="")
         self.hora_fin.pack(pady=10, padx=1)
-        self.descripcion = tk.Label(self, text="")
-        self.descripcion.pack(pady=10, padx=1)
         
     
         self.frame_imagen()
@@ -56,11 +56,11 @@ class FrameDetalle(tk.Frame):
             self.control.evento = evento
          
     def boton_volver(self):
-        self.boton_volver = tk.Button(self, text= 'volver', command=self.control.volver)
+        self.boton_volver = ctk.CTkButton(self, text= 'volver', command=self.control.volver)
         self.boton_volver.pack(padx=10, pady=10)
 
     def boton_dejar_review(self):
-         self.boton_dejar_review = tk.Button(self, text= 'dejar review', command=self.control.review)
+         self.boton_dejar_review = ctk.CTkButton(self, text= 'dejar review', command=self.control.review)
          self.boton_dejar_review.pack(padx=10, pady=10)
 
     def frame_imagen(self):
