@@ -62,5 +62,21 @@
         "calificacion": "Bueno",
         "comentario": "Demasiado relajado\n",
         "animo": "Unlike"
+    },
+    {
+        "id": 9,
+        "id_evento": 1,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Airbag nunca decepciona\n",
+        "animo": "Like"
+    },
+    {
+        "id": 10,
+        "id_evento": 4,
+        "id_usuario": 1,
+        "calificacion": "Bueno",
+        "comentario": "Me gust\u00f3\n",
+        "animo": "Like"
     }
 ]
