@@ -58,6 +58,8 @@ class FrameFormulario(ctk.CTkFrame):
         animo = self.animo.get()
         comentario = self.comentario.get("1.0", tk.END)
         self.control.publicar_review(comentario, animo)
+        self.comentario.delete("0.0", "end")
+        self.comentario.insert("1.0", "se publicó tu review")
         self.mensaje["text"] = "se publicó tu review"
 
     def volver(self):
