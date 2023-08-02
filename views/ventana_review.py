@@ -19,7 +19,7 @@ class FrameFormulario(ctk.CTkFrame):
         self.boton_volver()  
 
         self.mensaje = ctk.CTkLabel(self, text="") 
-        self.mensaje.grid(row=4, column=0, columnspan=2)     
+        self.mensaje.grid(row=6, column=0, columnspan=2)     
 
     def cargar_review(self, review, evento):
             nombre_evento = f"{evento.nombre}"
@@ -58,7 +58,7 @@ class FrameFormulario(ctk.CTkFrame):
         animo = self.animo.get()
         comentario = self.comentario.get("1.0", tk.END)
         self.control.publicar_review(comentario, animo)
-        self.mensaje.config(text="se publicó tu review")
+        self.mensaje["text"] = "se publicó tu review"
 
     def volver(self):
         self.animo = tk.IntVar(value=1)
